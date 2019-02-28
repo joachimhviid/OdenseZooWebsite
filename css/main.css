@@ -123,6 +123,7 @@ body {
 .menu-icon img:hover {
     box-shadow: inset 0 0 0 2em #a0a0a0;
     transition: 0.25s;
+    cursor: pointer;
 }
 
 .ticket {
@@ -142,4 +143,5 @@ body {
 .ticket:hover {
     box-shadow: inset 0 0 0 2em #a0a0a0;
     transition: 0.25s;
+    cursor: pointer;
 }
