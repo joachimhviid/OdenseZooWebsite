@@ -264,3 +264,68 @@ p.timetext {
     grid-area: bsix;
 }
 
+.latestwrapper {
+    display: grid;
+    background-color: #fff;
+    border-radius: 4px;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    padding: 12px;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 845px;
+}
+
+.latestthumbs {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.overlay:hover:after {
+    opacity: 1;
+    background-image: url(../images/facebook-white-vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40% 40%;
+}
+
+.latest1 {
+    background-image: url(../images/latest1.jpg);
+}
+
+.latest2 {
+    background-image: url(../images/latest2.jpg);
+}
+
+.latest3 {
+    background-image: url(../images/latest3.jpg);
+}
+
+.latest4 {
+    background-image: url(../images/latest4.jpg);
+}
+
+.latest5 {
+    background-image: url(../images/latest5.jpg);
+}
+
+.latest6 {
+    background-image: url(../images/latest6.jpg);
+}
