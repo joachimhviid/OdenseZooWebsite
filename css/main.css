@@ -65,6 +65,7 @@ font-style: italic; }
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: auto;
+    grid-column-gap: 16px;
     width: 90vw;
     height: 100%;
     margin: auto;
@@ -72,7 +73,7 @@ font-style: italic; }
     max-width: 1800px;
     background-color: transparent;
     grid-template-areas: 
-        ". . . . . . . . . . . ."
+        "dayplan dayplan dayplan dayplan dayplan . . latest latest latest latest latest"
         ;
 }
 
@@ -162,4 +163,96 @@ body {
     grid-area: herotext;
     display: inline-block;
     align-self: end;
+    padding-bottom: 35px;
 }
+
+h1 {
+    font-weight: 700;
+    font-size: 76px;
+    color: #fff;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.dayplan {
+    grid-area: dayplan;
+    padding-top: 120px;
+    height: auto;
+}
+
+.latest {
+    grid-area: latest;
+    padding-top: 120px;
+}
+
+.bulletpointlist {
+    display: grid;
+    grid-row-gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    grid-template-areas: 
+        "bone"
+        "btwo"
+        "bthree"
+        "bfour"
+        "bfive"
+        "bsix"
+        ;
+}
+
+.bullet {
+    background-color: #fff;
+    height: 120px;
+    border-radius: 4px;
+}
+
+.time {
+    background-color: #9D2429;
+    height: 120px;
+    width: 140px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+p.timetext {
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 27px;
+}
+
+.bulletone {
+    grid-area: bone;
+}
+
+.bullettwo {
+    grid-area: btwo;
+}
+
+.bulletthree {
+    grid-area: bthree;
+}
+
+.bulletfour {
+    grid-area: bfour;
+}
+
+.bulletfive {
+    grid-area: bfive;
+}
+
+.bulletsix {
+    grid-area: bsix;
+}
+
