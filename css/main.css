@@ -187,20 +187,19 @@ h3 {
 
 .dayplan {
     grid-area: dayplan;
-    padding-top: 120px;
+    margin-top: 120px;
     height: auto;
 }
 
 .latest {
     grid-area: latest;
-    padding-top: 120px;
+    margin-top: 120px;
 }
 
 .bulletpointlist {
     display: grid;
     grid-row-gap: 25px;
     padding-top: 50px;
-    padding-bottom: 50px;
     grid-template-areas: 
         "bone"
         "btwo"
@@ -334,13 +333,15 @@ p.timetext {
 
 .animallist {
     grid-area: animals;
-    margin-top: 50px;
+    margin-top: 120px;
+    margin-bottom: 50px;
 }
 
 .specieswrapper {
+    margin-top: 50px;
     display: grid;
     overflow: hidden;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
     grid-template-columns: repeat(4,25%);
     grid-column-gap: 0px;
     grid-template-areas: 
@@ -348,22 +349,55 @@ p.timetext {
         ;
 }
 
+/*.speciesoverlay {
+    position: absolute;
+    z-index: 100;
+    height: 600px;
+    width: 74.78vw;
+    max-width: 58.48vw;
+    background-size: cover;
+    background-image: linear-gradient(rgba(141, 141, 136, 0.34), rgba(141, 141, 136, 0.34));
+}*/
+
 .species {
     height: 600px;
 }
 
 .mammals {
     grid-area: mammal;
+    background-image: linear-gradient(rgba(178, 178, 187, 0.2), rgba(178, 178, 187, 0.2)), url("../images/mammals-crop.jpg");
 }
 
 .fish {
     grid-area: fish;
+    background-image: linear-gradient(rgba(178, 178, 187, 0.2), rgba(178, 178, 187, 0.2)), url("../images/fish-crop.jpg");
 }
 
 .reptiles {
     grid-area: reptile;
+    background-image: linear-gradient(rgba(178, 178, 187, 0.2), rgba(178, 178, 187, 0.2)), url("../images/reptiles-crop.jpg");
 }
 
 .birds {
     grid-area: bird;
+    background-image: linear-gradient(rgba(178, 178, 187, 0.2), rgba(178, 178, 187, 0.2)), url("../images/birds-crop.jpg");
+}
+
+.speciestextoverlay {
+    margin-left: 5%;
+    margin-top: 150%;
+}
+
+.linebreaker {
+    height: 5px;
+    width: 80%;
+    background-color: #fff;
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+
+.speciestext {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
 }
