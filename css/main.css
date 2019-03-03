@@ -74,6 +74,7 @@ font-style: italic; }
     background-color: transparent;
     grid-template-areas: 
         "dayplan dayplan dayplan dayplan dayplan . . latest latest latest latest latest"
+        ". animals animals animals animals animals animals animals animals animals animals ."
         ;
 }
 
@@ -304,6 +305,7 @@ p.timetext {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40% 40%;
+    transition: .5s;
 }
 
 .latest1 {
@@ -328,4 +330,40 @@ p.timetext {
 
 .latest6 {
     background-image: url(../images/latest6.jpg);
+}
+
+.animallist {
+    grid-area: animals;
+    margin-top: 50px;
+}
+
+.specieswrapper {
+    display: grid;
+    overflow: hidden;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(4,25%);
+    grid-column-gap: 0px;
+    grid-template-areas: 
+        "mammal fish reptile bird"
+        ;
+}
+
+.species {
+    height: 600px;
+}
+
+.mammals {
+    grid-area: mammal;
+}
+
+.fish {
+    grid-area: fish;
+}
+
+.reptiles {
+    grid-area: reptile;
+}
+
+.birds {
+    grid-area: bird;
 }
