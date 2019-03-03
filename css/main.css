@@ -412,6 +412,7 @@ p.timetext {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 12px;
+    margin-top: 50px;
 }
 
 .card {
@@ -421,9 +422,16 @@ p.timetext {
 }
 
 .cardimg {
-    width: 100%;
+    max-width: 100%;
+    /*height: 240px;*/
 }
 
 .cardheader {
     color: #000;
+}
+
+.cardtext {
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
