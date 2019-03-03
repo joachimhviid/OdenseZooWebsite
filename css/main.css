@@ -74,6 +74,7 @@ font-style: italic; }
     background-color: transparent;
     grid-template-areas: 
         "dayplan dayplan dayplan dayplan dayplan . . latest latest latest latest latest"
+        ". now now now now now now now now now now ."
         ". animals animals animals animals animals animals animals animals animals animals ."
         ;
 }
@@ -400,4 +401,29 @@ p.timetext {
     font-size: 30px;
     font-weight: 700;
     color: #fff;
+}
+
+.happeningnow {
+    grid-area: now;
+    margin-top: 120px;
+}
+
+.cardwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 12px;
+}
+
+.card {
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardimg {
+    width: 100%;
+}
+
+.cardheader {
+    color: #000;
 }
