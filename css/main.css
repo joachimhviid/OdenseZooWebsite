@@ -462,3 +462,162 @@ p.timetext {
     width: 100%;
     height: 28vh;
 }
+
+
+/* Responsiveness for devices of screen width 1024px and below */
+@media only screen and (max-width: 1024px) {
+    .hero-image {
+        width: 100%;
+        min-height: 30vh;
+    }
+    
+    .header-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 60px; 1fr 10vh;
+        grid-template-areas: 
+            "ticket . menu"
+            "logo logo logo"
+            "herotext herotext herotext"
+            ;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1em;
+    }
+    
+    .logo {
+        padding-top: 75px;
+    }
+    
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .hero-text {
+        margin-top: 10px;
+    }
+    
+    /* setup of grid */
+    .gridcontainer {
+        grid-template-columns: repeat(6,1fr);
+        grid-column-gap: 0px;
+        grid-template-areas: 
+            "dayplan dayplan dayplan dayplan dayplan dayplan"
+            "latest latest latest latest latest latest"
+            "now now now now now now"
+            "animals animals animals animals animals animals"
+            ;
+    }
+    
+    .dayplan {
+        margin-top: 70px;
+        padding-right: 0px;
+    }
+    
+    .bulletpointlist {
+        padding-top: 20px;
+    }
+    
+    .bullet {
+        height: 70px;
+    }
+    
+    .time {
+        height: 70px;
+        width: 100px;
+    }
+    
+    p.timetext {
+        padding-top: .5em;
+        font-size: 1.8em;
+    }
+    
+    .eventdetails {
+        padding-left: 10px;
+        padding-top: 1.5em;
+        font-size: 1em;
+    }
+    
+    .latest {
+        margin-top: 70px;
+        padding-left: 0px;
+    }
+    
+    .latestwrapper {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 2000px;
+    }
+    
+    .happeningnow {
+        margin-top: 70px;
+    }
+    
+    .cardwrapper {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
+    
+    .animallist {
+        margin-top: 70px;
+    }
+    
+    .specieswrapper {
+        margin-top: 20px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+            "mammal fish"
+            "reptile bird"
+            ;
+    }
+    
+    .species {
+        height: 300px;
+        min-width: 100%;
+        background-position: top;
+        /*background-repeat: no-repeat;*/
+    }
+    
+    .speciestextoverlay {
+        height: 300px;
+        padding-top: 11.5em;
+    }
+    
+    .speciestext {
+        font-size: 1.3em;
+    }
+    
+    .cardimg {
+        width: 100%;
+    }
+    
+    .ticket {
+        justify-self: start;
+    }
+}
+
+/* Responsiveness for devices of screen width 600px and below */
+@media only screen and (max-width: 600px) {
+.latestwrapper {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 1000px;
+    }
+    
+    .footerbackground {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
