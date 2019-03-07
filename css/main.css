@@ -512,6 +512,10 @@ ul {
     text-align: right;
 }
 
+.menu-icon.active {
+    position: relative;
+}
+
 @keyframes slidein {
     0% {width: 0px;}
     100% {width: calc(35% + 10px);}
