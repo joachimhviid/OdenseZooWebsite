@@ -16,20 +16,38 @@
     </head>
     <body>
         <header class="hero-image">
-            <div class="header-wrapper">
+            <nav class="header-wrapper">
                 <div class="logo">
                     <img src="images/odense-zoo-logo-white.png" alt="Odense Zoo logo i hvid">
                 </div>
-                <nav class="menu-icon">
-                    <img src="images/menu-ikon.svg" alt="Menu ikon">
-                </nav>
-                <a class="ticket">KØB BILLET</a>
+                <div class="menu-icon" id="navbar">
+                    <img src="images/menu-ikon.svg" alt="Menu ikon" onClick="toggleDrop();">
+                </div>
+                <a class="ticket" id="navicon">KØB BILLET</a>
                 <div class="hero-text">
                     <h1>Vildt tæt på!</h1>
                     <h3>365 dage med nye oplevelser</h3>
                 </div>
-            </div>
+            </nav>
         </header>
+        <div class="dropmenu" id="navdropdown">
+            <ul>
+                <li><a class="tab" href="/">BESØG ZOO</a></li>
+                <li><a class="tab" href="/">SKOLE & INSTITUTION</a></li>
+                <li><a class="tab" href="/">FEST & ARRANGEMENT</a></li>
+                <li><a class="tab" href="/">MØDE & TEAMBUILDING</a></li>
+                <li><a class="tab" href="/">STØT ZOO</a></li>
+            </ul>
+        </div>
+        
+        <script>
+            function toggleDrop() {
+                document.getElementById("navbar").classList.toggle("active");
+                document.getElementById("navdropdown").classList.toggle("active");
+                document.getElementById("navicon").classList.toggle("fixed");
+            }
+        </script>
+        
         <div class="gridcontainer">
             <section class="dayplan">
                 <h2>DAGENS PROGRAM</h2>

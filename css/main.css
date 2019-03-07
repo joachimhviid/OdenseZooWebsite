@@ -123,6 +123,8 @@ body {
     grid-area: menu;
     justify-self: end;
     padding-top: 50px;
+    position: relative;
+    z-index: 11;
 }
 
 .menu-icon img {
@@ -154,6 +156,8 @@ body {
     text-align: center;
     outline: 0;
     margin-top: 50px;
+    position: relative;
+    z-index: 11;
 }
 
 .ticket:hover {
@@ -463,9 +467,80 @@ p.timetext {
     height: 28vh;
 }
 
+.dropmenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 10vh;
+    padding-left: 10px;
+    padding-right: 5vw;
+    background-color: rgba(79, 79, 79, 0.8);
+    width: calc(35% + 10px);
+    height: 100%;
+    z-index: 10;
+    /*border-left: 5px solid #eaeaea;*/
+}
+
+.dropmenu.active {
+    animation: slidein .5s;
+}
+
+.active {
+    display: inline-block;
+    position: fixed;
+}
+
+.fixed {
+    position: fixed;
+    right: calc(5vw + 53px);
+}
+
+.tab {
+    display: block;
+    color: #fff;
+    text-decoration-line: none;
+    font-size: 2em;
+    position: relative;
+    left: 20px;
+    margin-top: 14px;
+    white-space: nowrap;
+}
+
+ul {
+    list-style: none;
+    text-align: right;
+}
+
+@keyframes slidein {
+    0% {width: 0px;}
+    100% {width: calc(35% + 10px);}
+}
+
+@media only screen and (min-width: 1800px) {
+    .dropmenu {
+        padding-right: 363px;
+    }
+    
+    .fixed {
+        right: calc(363px + 70px);
+    }
+}
 
 /* Responsiveness for devices of screen width 1024px and below */
 @media only screen and (max-width: 1024px) {
+    @keyframes slidein {
+        0% {width: 0px;}
+        100% {width: 60%;}
+    }
+    .dropmenu {
+        width: 60%;
+    }
+    
+    .fixed {
+        position: fixed;
+        right: auto;
+    }
     .hero-image {
         width: 100%;
         min-height: 30vh;
@@ -619,5 +694,20 @@ p.timetext {
     .footerbackground {
         height: auto;
         padding-bottom: 20px;
+    }
+    
+    @keyframes slidein {
+        0% {width: 0px;}
+        100% {width: 100%;}
+    }
+    
+    .dropmenu {
+        width: 100%;
+        padding-top: 120px;
+    }
+    
+    .tab {
+        font-size: 1.5em;
+        padding-right: 5vw;
     }
 }
