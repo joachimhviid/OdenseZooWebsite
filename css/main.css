@@ -521,7 +521,7 @@ ul {
     100% {width: calc(35% + 10px);}
 }
 
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 1921px) {
     .dropmenu {
         padding-right: 363px;
     }
