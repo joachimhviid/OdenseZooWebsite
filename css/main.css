@@ -552,7 +552,7 @@ ul {
     
     .header-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 60px; 1fr 10vh;
+        grid-template-rows: 60px 1fr 10vh;
         grid-template-areas: 
             "ticket . menu"
             "logo logo logo"
